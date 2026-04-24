@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer 🍅</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-tag">técnica de produtividade</div>
+    <h1>Foco com <em>intenção,</em><br>pausa com propósito.</h1>
+    <p>O método Pomodoro divide seu tempo em ciclos de concentração intensa seguidos de pausas estratégicas — para que seu cérebro trabalhe a seu favor, não contra você.</p>
+  </section>
+
+  <section class="benefits">
+    <div class="section-label">por que funciona</div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="benefit-icon">🧠</span>
+        <h3>Foco profundo</h3>
+        <p>Blocos curtos de 25 minutos reduzem a fadiga mental e aumentam a capacidade de concentração ao longo do dia.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">⏸️</span>
+        <h3>Pausas que renovam</h3>
+        <p>Descansos regulares previnem o esgotamento e permitem que o cérebro consolide o que aprendeu.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">📋</span>
+        <h3>Clareza de tarefas</h3>
+        <p>Ao dividir o trabalho em pomodoros, você percebe o quanto cada tarefa realmente demanda — e planeja melhor.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">✨</span>
+        <h3>Menos procrastinação</h3>
+        <p>Saber que há uma pausa chegando torna muito mais fácil começar. O método remove a ansiedade de "trabalhar sem fim".</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer-section">
+    <div class="timer-wrapper">
+
+      <div class="mode-tabs">
+        <button class="mode-btn active-work" id="btnWork" onclick="setMode('work')">Foco · 25min</button>
+        <button class="mode-btn" id="btnBreak" onclick="setMode('break')">Pausa · 5min</button>
+      </div>
+
+      <div class="ring-container">
+        <svg class="ring-svg" viewBox="0 0 220 220">
+          <circle class="ring-track" cx="110" cy="110" r="100"></circle>
+          <circle class="ring-progress" id="ringProgress" cx="110" cy="110" r="100"></circle>
+        </svg>
+        <div class="timer-display">
+          <div class="timer-time" id="timerDisplay">25:00</div>
+          <div class="timer-label" id="timerLabel">foco</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn-secondary" onclick="resetTimer()">↺</button>
+        <button class="btn-main" id="btnStart" onclick="toggleTimer()">Iniciar</button>
+        <button class="btn-secondary" onclick="skipPhase()">›</button>
+      </div>
+
+      <div class="session-info">
+        <div class="session-stat">
+          <span class="stat-number" id="pomodorosCount">0</span>
+          <span class="stat-label">pomodoros</span>
+        </div>
+        <div class="session-stat">
+          <span class="stat-number" id="minutesCount">0</span>
+          <span class="stat-label">minutos focados</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    Feito com carinho por <a href="https://github.com/uaijulia" target="_blank" rel="noopener noreferrer">Julia Guedes</a> ♥
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
