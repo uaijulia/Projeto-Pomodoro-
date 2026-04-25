@@ -17,6 +17,12 @@ Além disso, o projeto simula um aplicativo de produtividade baseado na técnica
 
 ---
 
+#### 🚀 Veja funcionando
+
+https://uaijulia.github.io/Projeto-Pomodoro-/
+
+---
+
 #### ⚙️ Funcionalidades
 
 - Timer de foco Pomodoro
@@ -61,3 +67,7 @@ Isso significa que:
 1. Clone este repositório:
 ```bash
 git clone https://github.com/uaijulia/Projeto-Pomodoro-.git
+
+---
+
+⭐ Feedbacks são sempre bem-vindos! Se você curtir o projeto, deixe uma estrela no repositório :)
