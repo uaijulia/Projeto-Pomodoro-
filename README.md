@@ -56,8 +56,8 @@ Isso significa que:
 
 ---
 
-## 📂 Como executar o projeto
+#### 📂 Como executar o projeto
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/seuusuario/pomodoro-timer.git
+git clone https://github.com/uaijulia/Projeto-Pomodoro-.git
